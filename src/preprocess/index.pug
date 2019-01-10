@@ -1,0 +1,19 @@
+- var gameName = 'Reputada';
+
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title #{gameName}
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' type='text/css' media='screen' href='game.css')
+  script(src='jquery-3.3.1.min.js')
+body
+  include pug/includes/header.pug
+  include pug/includes/credits.pug
+  include pug/includes/start.pug
+  include pug/includes/game.pug
+  include pug/includes/game-info.pug
+  include pug/includes/victory-modal.pug
+
+  script(src='game.js' type='module')
